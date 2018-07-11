@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f778eabf-c048-483d-b251-ee3aaf49be19" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetUser" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9b55f94d-35f7-4ae7-a234-5a3f7de62c23fileName">GetUser</con:setting>
+    <con:setting id="eed39d5e-952e-453b-9842-03b22e188edffileName">GetUser</con:setting>
+    <con:setting id="4f2fe0b7-0332-4dc3-b3b3-6a2fe996cea4fileName">GetUser</con:setting>
+    <con:setting id="f778eabf-c048-483d-b251-ee3aaf49be19fileName">GetUser</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="gstep1" id="b167c239-2478-4891-b235-4f4653ab0032">
+    <con:settings/>
+    <con:config service="https://reqres.in 2" methodName="https://reqres.in/api/users" resourcePath="/api/users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="gstep1" id="0c9ae50d-ee01-4976-b8d1-3aaeff00c1e4" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://reqres.in</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://reqres.in/api/users</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

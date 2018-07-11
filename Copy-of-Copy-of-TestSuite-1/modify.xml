@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="4a83bd39-3feb-44c5-a0de-7664aa89918f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="modify" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ad37c7c2-504b-443a-89a1-7d969b1a2d1ffileName">modify</con:setting>
+    <con:setting id="a318163a-0b31-40b2-900e-8948fed83d82fileName">modify</con:setting>
+    <con:setting id="ba419317-8132-4096-8673-4104f084e8dafileName">modify</con:setting>
+    <con:setting id="4a83bd39-3feb-44c5-a0de-7664aa89918ffileName">modify</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="mstep1" id="9a6e202a-0562-4c0e-8f41-a5b940f986f4">
+    <con:settings/>
+    <con:config service="https://reqres.in 2" methodName="Method 1" resourcePath="/api/users/2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="mstep1" id="db284afe-16af-466f-ab39-8fe8a8aa81cd" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://reqres.in</con:endpoint>
+        <con:request>{
+	"name": "${#TestSuite#name}",
+	"job": "${#TestSuite#job}"
+}</con:request>
+        <con:originalUri>https://reqres.in/api/users/2</con:originalUri>
+        <con:assertion type="JsonPath Match" id="5400e77d-87ce-4d63-bc33-8fe958b86ae5" name="JsonPath Match">
+          <con:configuration>
+            <path>$['name']</path>
+            <content>TestLabs</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Valid HTTP Status Codes" id="456e2d81-eb53-44a6-9aed-904e1c70c475" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

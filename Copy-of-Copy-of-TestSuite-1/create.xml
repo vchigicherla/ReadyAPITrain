@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="3d3a3259-e45c-4d07-841c-5aa78f0a8ccd" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="create" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f0734686-1342-4228-9ba8-bf4bd588ce69fileName">create</con:setting>
+    <con:setting id="ca3ba231-010f-4beb-8696-0ea059039d34fileName">create</con:setting>
+    <con:setting id="5b6c86de-0862-4669-b123-b87aebdfc41dfileName">create</con:setting>
+    <con:setting id="3d3a3259-e45c-4d07-841c-5aa78f0a8ccdfileName">create</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="cstep1" id="59bd2c0e-c35b-4f21-bb0e-5e8b228cdde2">
+    <con:settings/>
+    <con:config service="https://reqres.in 2" resourcePath="/api/users" methodName="Users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="cstep1" id="790f6cf8-04b6-4746-b5be-bb13db1d6c5c" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://reqres.in</con:endpoint>
+        <con:request>{
+	"name": "Viswanath",
+	"job": "IT"
+}</con:request>
+        <con:originalUri>https://reqres.in/api/users</con:originalUri>
+        <con:assertion type="JsonPath Match" id="0a011bbb-66d8-4f41-ba3c-8d5c439a9dfc" name="JsonPath Match">
+          <con:configuration>
+            <path>$['name']</path>
+            <content>Viswanath</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

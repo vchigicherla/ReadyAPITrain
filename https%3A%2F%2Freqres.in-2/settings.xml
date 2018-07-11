@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="f3ef3db2-58fe-47b2-8ef2-88943c94944a" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://reqres.in 2" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="aeb58905-338d-4876-ac7d-d1dad5573f61fileName">https%3A%2F%2Freqres.in-2</con:setting>
+    <con:setting id="de8cd016-7ec8-415f-a570-27a0619c1f9afileName">https%3A%2F%2Freqres.in-2</con:setting>
+    <con:setting id="ae0872b0-8db4-4e72-b288-99462aef0e2dfileName">https%3A%2F%2Freqres.in-2</con:setting>
+    <con:setting id="f3ef3db2-58fe-47b2-8ef2-88943c94944afileName">https%3A%2F%2Freqres.in-2</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart=""/>
+  <con:endpoints>
+    <con:endpoint>https://reqres.in</con:endpoint>
+  </con:endpoints>
+</con:interface>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Users" path="/api/users" id="4a6b0c8d-0f39-451e-be06-6983e4023341" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="14ef1b45-ec15-447d-8c69-3318d0f5e737fileName">Users</con:setting>
+    <con:setting id="4c9e74c6-38fb-4b49-bae1-2d25c1bee73ffileName">Users</con:setting>
+    <con:setting id="77be73f5-eed9-44af-a19c-2ef458190749fileName">Users</con:setting>
+    <con:setting id="4a6b0c8d-0f39-451e-be06-6983e4023341fileName">Users</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:resource name="2" path="2" id="35987c20-0b43-4f30-94b6-1b0716998c23">
+    <con:settings/>
+    <con:parameters/>
+    <con:method name="Method 1" id="b67ec38b-adbd-4ce6-baf3-d1c6f3234d2a" method="PUT">
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="REQUEST">
+        <con:mediaType>application/json</con:mediaType>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json; charset=utf-8</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:element xmlns:ns="https://reqres.in/api/users/2">ns:Response</con:element>
+      </con:representation>
+      <con:representation type="FAULT">
+        <con:mediaType>text/html; charset=utf-8</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+        <con:element>html</con:element>
+      </con:representation>
+      <con:request name="modifyUser" id="41c55ea5-9ae8-4a98-8f60-dcc6dc03fd69" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://reqres.in</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://reqres.in/api/users/2</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:request>
+    </con:method>
+  </con:resource>
+  <con:method name="Users" id="acdd2e08-7f33-467f-98eb-579194f9cdb7" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>201</con:status>
+      <con:params/>
+      <con:element xmlns:user="https://reqres.in/api/users">user:Response</con:element>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="create" id="8f597183-f685-4bb2-8b69-847dff47575c" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://reqres.in</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://reqres.in/api/users</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder/>
+    </con:request>
+  </con:method>
+  <con:method name="https://reqres.in/api/users" id="8b5cfe91-d3ef-477b-aa76-3ac1cae71192" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:user="https://reqres.in/api/users">user:Response</con:element>
+    </con:representation>
+    <con:request name="get" id="9de58677-f3b7-4d01-b10c-c086f00d27da" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://reqres.in</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://reqres.in/api/users</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder/>
+    </con:request>
+  </con:method>
+  <con:method name="create2" id="bd3653eb-bd1d-41e3-95b9-e866b74d6e7f" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>201 200</con:status>
+      <con:params/>
+      <con:element xmlns:user="https://reqres.in/api/users">user:Response</con:element>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="create" id="08446f6a-f58e-4d18-970e-28387029e247" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://reqres.in</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://reqres.in/api/users</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder/>
+    </con:request>
+  </con:method>
+</con:resource>

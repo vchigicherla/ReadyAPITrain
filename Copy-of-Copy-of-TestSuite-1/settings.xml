@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="0f8395b8-ece2-4a36-bd92-cbabb407c15e" name="Copy of Copy of TestSuite 1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="4d45dcf8-db47-4116-b38e-9323befe5a96fileName">TestSuite-1</con:setting>
+    <con:setting id="491d955f-e51a-40e9-9720-e153b3424c36fileName">TestSuite-1</con:setting>
+    <con:setting id="98b71196-03df-4408-9e81-a19ee5a376c7fileName">Copy-of-TestSuite-1</con:setting>
+    <con:setting id="0f8395b8-ece2-4a36-bd92-cbabb407c15efileName">Copy-of-Copy-of-TestSuite-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:runType>PARALLELL</con:runType>
+  <con:properties>
+    <con:property>
+      <con:name>name</con:name>
+      <con:value>TestLabs</con:value>
+    </con:property>
+    <con:property>
+      <con:name>job</con:name>
+      <con:value>Training Institute</con:value>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+</con:testSuite>
